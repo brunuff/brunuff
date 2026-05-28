@@ -19,6 +19,7 @@ The agent infrastructure behind a production sports-AI platform. My layer:
 - **Self-correction / drift control** — a re-anchoring protocol and hooks that catch the
   agent drifting mid-session, plus a verify-then-continue API-error recovery path.
 - 800+ merged PRs.
+- company IP — walkthrough on request
 
 ## PSD — a model a regulated lab actually trusted
 [github.com/brunuff/PSD](https://github.com/brunuff/PSD) — a model isn't done when it's
