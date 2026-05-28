@@ -20,17 +20,19 @@ The agent infrastructure behind a production sports-AI platform. My layer:
   agent drifting mid-session, plus a verify-then-continue API-error recovery path.
 - 800+ merged PRs.
 
-## PSD — computer-vision pipeline for particle-size analysis
-
-A production CV system for particle-size distribution of biological samples (cannabis QC)
-in a regulated manufacturing lab.
-
+## PSD — a model a regulated lab actually trusted
+[github.com/brunuff/PSD](https://github.com/brunuff/PSD) — a model isn't done when it's
+accurate; it's done when a regulated lab will rely on it. PSD replaced a manual image-analysis
+process in a regulated QC lab:
 - Calibrated morphometry — 13 features/particle (area, Feret diameters, circularity,
   solidity…) against a physical reference object.
-- RF / GB / SVM candidates, Optuna multi-objective tuning over ~9,000 seeds, 5-fold
-  stratified cross-validation; production model at **90.95% accuracy**.
-- Full pipeline: detection → preprocessing → feature extraction → classification → PDF
-  report + Flask dashboard with live progress.
+- RF / GB / SVM candidates, Optuna over ~9,000 seeds, 5-fold stratified CV; **production model
+  at 90.95% accuracy** — validated against the manual method and shipped with the audit trail
+  analysts needed to stop double-checking it.
+- detection → preprocessing → feature extraction → classification → PDF report + live dashboard.
+
+The hard part wasn't the model; it was closing the prototype-to-trust gap. That's the work I
+care about most.
 
 ## Claude Aura — making agent behavior legible
 
