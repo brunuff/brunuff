@@ -1,6 +1,6 @@
 # Bruno Costa Lima — Selected Work
 
-Ph.D. food scientist (veterinary medicine; postdoc, University of Kentucky) turned
+Ph.D. food scientist (veterinary medicine; postdoc, University of Kentucky) fused
 hands-on AI builder. I ship LLM-powered agent systems and computer-vision pipelines that
 run in production. Three pieces, with verifiable detail.
 
