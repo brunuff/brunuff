@@ -21,7 +21,9 @@ oversight.
 - **Quality-gated model routing** — the executor/advisor split is promoted only through an eval
   gate of 15 golden issues scored on 5 dimensions, behind a 3-consecutive-pass barrier.
 - **Self-correction / drift control** — a re-anchoring protocol, mid-session drift hooks, and
-  verify-then-continue API-error recovery; ~20 reusable skills plus session-lifecycle hooks, with
+  verify-then-continue API-error recovery; ~20 reusable skills (including `groom-backlog`,
+  `orphan-discover`, `triage-reviews`, the weekly `doc-defrag` dream-chain, and an
+  `ncsc-compliance` quadrimestral cyber-threat audit) plus session-lifecycle hooks, with
   on-commit, heartbeat, and weekly integrity checks.
 - 800+ merged PRs. *Company IP — happy to walk through the architecture or share a sanitized
   writeup.*
