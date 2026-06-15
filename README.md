@@ -42,6 +42,23 @@ process in a regulated QC lab:
 The hard part wasn't the model; it was closing the prototype-to-trust gap. That's the work I
 care about most.
 
+## Modern Workplace — an M365 Stage-Gate for a regulated client
+An NPD Stage-Gate automation shipping for a regulated food manufacturer's product team —
+standard M365 / Power Platform connectors only, tenant-native, no external infrastructure.
+- **Eleven Power Automate flows** on SharePoint Online + Teams: scheduled reminder engine,
+  Monday-morning risk digest, 3-business-day escalation router; event-triggered gate-approval
+  routing with Adaptive Cards, an A3 report generator, and a document-upload handler that
+  auto-tags metadata and closes checklist items.
+- **Tenant-native**: client owns the SharePoint Lists, the flows, and the audit trail — no
+  premium connectors, no off-tenant data movement.
+- **Shipping into production**: the deployed-flow bug-fix arc — ProjectID uniqueness from
+  SharePoint ID, Lookup column setup, idempotent file copy, Submitted → Approved gated by the
+  PD Manager — is the part that proves *deployed* and not *demoed*. *Client IP — happy to walk
+  through the architecture.*
+
+The discipline is the same as PSD: validate against the paper process, ship the audit trail
+the analysts will actually trust. Different stack, different client.
+
 ## Claude Aura — legibility as a safety primitive
 [github.com/brunuff/claude-aura](https://github.com/brunuff/claude-aura) — an MCP server +
 dashboard that surfaces a Claude Code session's *self-reported* state (persona, functional
