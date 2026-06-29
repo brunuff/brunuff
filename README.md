@@ -65,3 +65,10 @@ dashboard that surfaces a Claude Code session's *self-reported* state (persona, 
 state, risk) as an ambient "Andon board." The bet: human-AI collaboration gets safer when the
 agent's state is visible to its operator — oversight and transparency, not a prettier dashboard.
 Grounded in the Toyota Andon system and Axelrod's work on cooperation under visibility.
+
+## csharp-llm-cli — C#/.NET LLM client
+[github.com/brunuff/brunuff/tree/main/csharp-llm-cli](https://github.com/brunuff/brunuff/tree/main/csharp-llm-cli)
+— a compact C#/.NET console client for the Anthropic Claude API: `async`/`await`, `HttpClient`,
+`System.Text.Json` typed request/response models, env-var config, and error handling. Python is
+my daily driver — this is the same LLM-orchestration work expressed in idiomatic C#, because the
+cleanest way to show a language is to ship a small real thing in it.

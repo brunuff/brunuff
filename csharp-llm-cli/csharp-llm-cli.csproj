@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>csharp-llm-cli</AssemblyName>
+    <RootNamespace>CsharpLlmCli</RootNamespace>
+  </PropertyGroup>
+
+  <!-- The xUnit suite lives under tests/ with its own project; keep it out of this build. -->
+  <ItemGroup>
+    <Compile Remove="tests/**/*.cs" />
+  </ItemGroup>
+
+</Project>
